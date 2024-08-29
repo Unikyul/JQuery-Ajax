@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<body>
+    <h1>숨기기</h1>
+    <button onclick="hideDisplay()">display로 숨기기</button>
+    <button onclick="hideVisible()">visible로 숨기기</button>
+    <div class="box">
+        <div class="box" id="innerBox1">
+            내부박스1
+        </div>
+        <div class="box" id="innerBox2">
+            내부박스2
+        </div>
+    </div>
+    <script>
+        function hideDisplay() {
+            $("#innerBox1").hide(); //display =none
+        }
+        function hideVisible() {
+            $("#innerBox1").remove(); // dom을 삭제합니다.
+        }
+    </script>
+</body>
+
+</html

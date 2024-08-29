@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- button 은 다 돔이다!-->
+    <button id="myBtn">Click me</button>
+    <button id="myBtn1">Click1 me</button>
+    <button id="myBtn2">Click2 me</button>
+
+    <button id="myBtn4">Click4 me</button>
+    <button id="myBtn5">Click5 me</button>
+    <button id="myBtn6">Click6 me</button>
+
+    <input type="text" id="myIp">
+    <input type="text" id="myIp1">
+    <input type="text" id="myIp2">
+    <form id="myForm">
+        <input type="submit" id="myIp3" value="Submit">
+    </form>
+
+    <script>
+        const myBtn = document.getElementById("myBtn");
+        myBtn.addEventListener("dblclick", function (e) {
+            console.log(e);
+        });
+
+        const myIp = document.getElementById("myIp");
+        myIp.addEventListener("change", function (e) {
+            console.log(e);
+        });
+        /**btn1*/
+        const myBtn1 = document.getElementById("myBtn1")
+        myBtn1.addEventListener("mousedown", function (e) {
+            console.log(e);
+        });
+
+        const myBtn2 = document.getElementById("myBtn2")
+        myBtn2.addEventListener(" mouseup", function (e) {
+            console.log(e);
+        });
+        /** 
+         *const myBtn3 = document.getElementById("myBtn3")
+         myBtn3.addEventListener("mousemove", function (e) {
+             console.log(e);
+         });
+          const myBtn5 = document.getElementById("myBtn5")
+        myBtn5.addEventListener("mouseover", function (e) {
+            console.log(e);
+        }); 
+         * 
+        */
+
+
+
+        const myBtn6 = document.getElementById("myBtn6")
+        myBtn6.addEventListener("mouseout", function (e) {
+            console.log(e);
+        });
+        const myIp1 = document.getElementById("myIp1")
+        myIp1.addEventListener("keydown", function (e) {
+            console.log(e);
+        });
+        const myIp2 = document.getElementById("myIp2")
+        myIp2.addEventListener("keyup", function (e) {
+            console.log(e);
+        });
+        const myForm = document.getElementById("myForm");
+        myForm.addEventListener("submit", function (e) {
+            console.log(e);
+        });
+
+    </script>
+
+</body>
+
+</html>
